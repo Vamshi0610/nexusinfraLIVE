@@ -978,6 +978,9 @@ a:hover {
 .intro .swiper-pagination {
   bottom: 50px;
 }
+.intro .swiper-pagination.properties {
+  bottom: 250px;
+}
 
 .intro .swiper-pagination .swiper-pagination-bullet {
   width: 18px;
