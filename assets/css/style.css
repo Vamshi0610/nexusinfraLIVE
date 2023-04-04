@@ -349,6 +349,10 @@ a:hover {
   margin-bottom: 1rem;
   position: relative;
 }
+.title-box-d.about{
+  margin-bottom: 0rem !important;
+  margin-top: 1rem;
+}
 
 .title-box-d .title-d {
   font-weight: 600;
@@ -1177,7 +1181,17 @@ a:hover {
     margin-bottom: 2.5rem;
   }
 }
-
+.card-box-a .property-status{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: black;
+  background-color: #ffffff;
+  padding: 0.6rem 0.8rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
 .card-box-a span,
 .card-box-b span,
 .card-box-c span,
