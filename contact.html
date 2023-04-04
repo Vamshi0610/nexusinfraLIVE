@@ -37,18 +37,29 @@
   <script src="https://smtpjs.com/v3/smtp.js">
   </script>
   <script type="text/javascript">
+    // function sendEmail() {
+    //   Email.send({
+    //     Host: "smtp.gmail.com",
+    //     Username: "uxwithvamshi@gmail.com",
+    //     Password: "DAEA6B9D96BEC9D48F6903D6612935F9AC90",
+    //     To: 'uxwithvamshi@gmail.com',
+    //     From: document.getElementById("useremail").value,
+    //     Subject: "New Enquiry",
+    //     Body: 'Hello, ' + document.getElementById("usermessage").value
+    //   }).then(
+    //     message => console.log("xxx", message)
+    //   );
+    // } 
+
     function sendEmail() {
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "vaishuawaru@gmail.com",
-        Password: "9885426468",
-        To: 'awaru.vaishnavi@gmail.com',
-        From: document.getElementById("useremail").value,
-        Subject: "New Enquiry",
-        Body: 'Hello, ' + document.getElementById("usermessage").value
-      }).then(
-        message => alert(message)
-      );
+      console.log(document.getElementById("usermessage").value)
+      name = document.getElementById("username").value;
+      emailaddress = document.getElementById("useremail").value;
+      message = document.getElementById("usermessage").value;
+      subject = document.getElementById("usertext").value;
+      body = "Hi Kishan,%0d%0a%0d%0a" + "Good day!%0d%0a%0d%0a" + "There is new enquiry from '" + name +
+        "(email: " + emailaddress + ")' regarding '" + message +"'. %0d%0a%0d%0aThank you.";
+      document.getElementById("anchorMail").action = 'mailto:vaishuawaru@gmail.com' + '?subject=' + subject + '&body=' + body;
     } 
   </script>
   <!-- ======= Property Search Section ======= -->
@@ -195,7 +206,7 @@
                 That's why we are always available to answer any questions you may have and to keep you updated.
                 Our goal is to ensure that you are fully satisfied with the outcome and that your experience with us is
                 positive and hassle-free.
-                <br /><br/>
+                <br /><br />
                 Whether you're looking to invest in real estate, we have the knowledge and expertise to make it happen.
                 Contact us today to schedule a consultation and take the first step towards achieving your real estate
                 goals.
@@ -234,7 +245,7 @@
           <div class="col-sm-12 section-t8">
             <div class="row">
               <div class="col-md-7">
-                <form method="post" onsubmit="sendEmail(); reset(); return false;">
+                <form method="post" id="anchorMail" onsubmit="sendEmail();">
                   <div class="row">
                     <div class="col-md-6 mb-3">
                       <div class="form-group">
@@ -427,11 +438,11 @@
                 </li>
                 <li class="item-list-a">
                   <i class="bi bi-chevron-right"></i> <a href="NexusElitePride.html">NexusElite Pride</a>
-                </li>                
+                </li>
                 <li class="item-list-a">
                   <i class="bi bi-chevron-right"></i> <a href="NexusEliteJewel.html">NexusElite Jewel</a>
                 </li>
-                 <li class="item-list-a">
+                <li class="item-list-a">
                   <i class="bi bi-chevron-right"></i> <a href="NexusElitePlatinum.html">NexusElite Platinum</a>
                 </li>
                 <!-- <li class="item-list-a">
