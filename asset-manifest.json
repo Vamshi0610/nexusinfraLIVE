@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/nexusinfraLIVE/static/css/main.cb3a65c8.css",
+    "main.js": "/nexusinfraLIVE/static/js/main.7fbbccda.js",
+    "static/js/787.4c34f37c.chunk.js": "/nexusinfraLIVE/static/js/787.4c34f37c.chunk.js",
+    "static/media/logo.svg": "/nexusinfraLIVE/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/nexusinfraLIVE/index.html",
+    "main.cb3a65c8.css.map": "/nexusinfraLIVE/static/css/main.cb3a65c8.css.map",
+    "main.7fbbccda.js.map": "/nexusinfraLIVE/static/js/main.7fbbccda.js.map",
+    "787.4c34f37c.chunk.js.map": "/nexusinfraLIVE/static/js/787.4c34f37c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb3a65c8.css",
+    "static/js/main.7fbbccda.js"
+  ]
+}
