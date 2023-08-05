@@ -1,3 +1,5 @@
+import Swiper from "swiper";
+
 /**
 * Template Name: EstateAgency - v4.10.0
 * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
@@ -209,4 +211,4 @@
     }
   });
 
-})()
+})(Swiper)

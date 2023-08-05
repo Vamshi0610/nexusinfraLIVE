@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   color: #555555;
 }
 
@@ -2178,6 +2178,18 @@ a:hover {
 .section-footer .item-list-a i {
   font-size: 18px;
   padding-right: 4px;
+  color: #FCC500;
+}
+
+.section-footer .item-list-a a,
+footer .list-inline-item a,
+.list-inline-item a{
+  text-decoration: none !important;
+  color:rgba(0, 0, 0) !important;
+}
+
+.section-footer .item-list-a a:hover,
+footer .list-inline-item a:hover{  
   color: #FCC500;
 }
 
