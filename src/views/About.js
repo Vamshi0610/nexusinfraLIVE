@@ -6,7 +6,7 @@ import "../assets/vendor/swiper/swiper-bundle.min.css";
 // import "../assets/vendor/bootstrap/js/bootstrap.bundle.min.js";
 // import "../assets/vendor/swiper/swiper-bundle.min.js";
 // import "../assets/vendor/php-email-form/validate.js";
-import "../assets/js/main.js";
+// import "../assets/js/main.js";
 import Footer from "./Footer";
 import Header from "./Header";
 import slideAbout1 from "../assets/img/slide-about-1.jpg"

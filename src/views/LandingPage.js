@@ -9,7 +9,7 @@ import "../assets/vendor/swiper/swiper-bundle.min.css";
 // import '../assets/vendor/bootstrap/js/bootstrap.bundle.min.js';
 // import "../assets/vendor/swiper/swiper-bundle.min.js";
 // import "../assets/vendor/php-email-form/validate.js";
-import "../assets/js/main.js";
+// import "../assets/js/main.js";
 import testimonial1 from "../assets/img/testimonial-1.jpg";
 import testimonial2 from "../assets/img/testimonial-2.jpg";
 import CountyJewel from "../assets/img/Nexus-Elite-County-Jewel.svg";
