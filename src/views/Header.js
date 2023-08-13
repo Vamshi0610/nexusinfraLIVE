@@ -29,34 +29,31 @@ export default function Header(props) {
             id="navbarDefault"
           >
             <ul className="navbar-nav">
-              <li className="nav-item">
+              <li className="nav-item" onClick={() => navigate("/")}>
                 <a
                   className={
                     props.activeTab == "home" ? "nav-link active" : "nav-link"
                   }
-                  onClick={() => navigate("/")}
                 >
                   Home
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item" onClick={() => navigate("/about")}>
                 <a
                   className={
                     props.activeTab == "about" ? "nav-link active" : "nav-link"
                   }
-                  href="/about"
                 >
                   About
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item" onClick={() => navigate("/properties")}>
                 <a
                   className={
                     props.activeTab == "properties"
                       ? "nav-link active"
                       : "nav-link"
                   }
-                  onClick={() => navigate("/properties")}
                 >
                   Properties
                 </a>
