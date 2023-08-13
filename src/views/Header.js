@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <>
@@ -26,14 +28,14 @@ export default function Header() {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" href="index.html">
-                  Home
+                <a className="nav-link active">
+                  <Link to={{ pathname: "/" }}>Home</Link>
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link " href="about.html">
-                  About
+                <a className="nav-link ">
+                  <Link to={{ pathname: "/about" }}>About</Link>
                 </a>
               </li>
 
@@ -44,8 +46,8 @@ export default function Header() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link " href="contact.html">
-                  Contact
+                <a className="nav-link ">
+                  <Link to={{ pathname: "/contact" }}>Contact</Link>
                 </a>
               </li>
             </ul>
