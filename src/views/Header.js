@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-export default function Header() {
+export default function Header(props) {
+  const navigate = useNavigate();
+
   return (
     <>
       <nav className="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
@@ -28,26 +30,46 @@ export default function Header() {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active">
-                  <Link to={{ pathname: "/" }}>Home</Link>
+                <a
+                  className={
+                    props.activeTab == "home" ? "nav-link active" : "nav-link"
+                  }
+                  onClick={() => navigate("/")}
+                >
+                  Home
                 </a>
               </li>
-
               <li className="nav-item">
-                <a className="nav-link ">
-                  <Link to={{ pathname: "/about" }}>About</Link>
+                <a
+                  className={
+                    props.activeTab == "about" ? "nav-link active" : "nav-link"
+                  }
+                  href="/about"
+                >
+                  About
                 </a>
               </li>
-
               <li className="nav-item">
-                <a className="nav-link " href="property-grid.html">
+                <a
+                  className={
+                    props.activeTab == "properties"
+                      ? "nav-link active"
+                      : "nav-link"
+                  }
+                  onClick={() => navigate("/properties")}
+                >
                   Properties
                 </a>
               </li>
-
-              <li className="nav-item">
-                <a className="nav-link ">
-                  <Link to={{ pathname: "/contact" }}>Contact</Link>
+              <li className="nav-item" onClick={() => navigate("/contact")}>
+                <a
+                  className={
+                    props.activeTab == "contact"
+                      ? "nav-link active"
+                      : "nav-link"
+                  }
+                >
+                  Contact
                 </a>
               </li>
             </ul>

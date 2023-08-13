@@ -1,20 +1,39 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import emailjs from '@emailjs/browser';
-import React from 'react';
-
+import emailjs from "@emailjs/browser";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
   const formRef = React.useRef();
-    const sendanemail = (e)=>{
-        e.preventDefault();
-        console.log("formRef", formRef);
-        emailjs.sendForm('service_2u0qt1p','template_cw4i7cf',formRef.current,'uT5-ASjkm4JDtNtm4');
-    }
+  const navigate = useNavigate();
+  const sendanemail = (e) => {
+    e.preventDefault();
+    console.log("formRef", formRef);
+    emailjs
+      .sendForm(
+        "service_2u0qt1p",
+        "template_cw4i7cf",
+        formRef.current,
+        "uT5-ASjkm4JDtNtm4"
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+          document.getElementById("anchorMail").reset();
+          window.alert("Sent successfully");
+        },
+        function (error) {
+          console.log("FAILED...", error);
+          document.getElementById("anchorMail").reset();
+          window.alert("Failed! PLease try again");
+        }
+      );
+  };
   return (
     <>
       <div className="click-closed"></div>
-      <Header />
+      <Header activeTab="contact"/>
 
       <main id="main">
         {/* ======= Intro Single ======= */}
@@ -48,7 +67,7 @@ export default function Contact() {
                 >
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a href="index.html">Home</a>
+                      <a onClick={() => navigate("/")}>Home</a>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Contact
@@ -73,7 +92,7 @@ export default function Contact() {
                       width="100%"
                       height="450"
                       frameborder="0"
-                      style={{"border":0}}
+                      style={{ border: 0 }}
                       allowfullscreen
                     ></iframe>
                   </div>
@@ -82,7 +101,12 @@ export default function Contact() {
               <div className="col-sm-12 section-t8">
                 <div className="row">
                   <div className="col-md-7">
-                    <form ref={formRef} method="post" id="anchorMail" onSubmit={(e)=>sendanemail(e)}>
+                    <form
+                      ref={formRef}
+                      method="post"
+                      id="anchorMail"
+                      onSubmit={(e) => sendanemail(e)}
+                    >
                       <div className="row">
                         <div className="col-md-6 mb-3">
                           <div className="form-group">
@@ -255,7 +279,7 @@ export default function Contact() {
       </main>
       {/* End #main */}
 
-      <Footer />
+      <Footer activeTab="contact"/>
 
       {/* <div id="preloader"></div>
           <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i

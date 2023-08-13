@@ -651,12 +651,17 @@ a:hover {
   padding-bottom: 8px;
   margin-left: 0;
 }
+.navbar-default.navbar-reduce .nav-item a{
+  text-decoration: none !important;
+
+}
 
 @media (min-width: 768px) {
 
   .navbar-default.navbar-trans .nav-item,
   .navbar-default.navbar-reduce .nav-item {
     margin-left: 15px;
+    cursor: pointer;
   }
 }
 
@@ -714,14 +719,15 @@ a:hover {
 }
 
 .navbar-default.navbar-trans .nav-link:hover {
-  color: #000000;
+  color: #000000 !important;
 }
 
 .navbar-default.navbar-trans .show>.nav-link,
 .navbar-default.navbar-trans .active>.nav-link,
 .navbar-default.navbar-trans .nav-link.show,
 .navbar-default.navbar-trans .nav-link.active {
-  color: #000000;
+  color: #000000 !important;
+  text-decoration: none !important;
 }
 
 .navbar-default.navbar-reduce {
@@ -731,7 +737,7 @@ a:hover {
 }
 
 .navbar-default.navbar-reduce .nav-link {
-  color: #000000;
+  color: #000000 !important;
 }
 
 .navbar-default.navbar-reduce .nav-link:before {
@@ -2180,17 +2186,20 @@ a:hover {
   padding-right: 4px;
   color: #FCC500;
 }
-
+footer .list-inline-item{
+  cursor: pointer;
+}
 .section-footer .item-list-a a,
 footer .list-inline-item a,
 .list-inline-item a{
   text-decoration: none !important;
-  color:rgba(0, 0, 0) !important;
+  color:rgba(0, 0, 0) ;
 }
 
 .section-footer .item-list-a a:hover,
-footer .list-inline-item a:hover{  
-  color: #FCC500;
+footer .list-inline-item a:hover,
+footer .list-inline-item.active{  
+  color: #FCC500 !important;
 }
 
 .section-footer .widget-a .w-title-a {

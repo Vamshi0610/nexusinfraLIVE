@@ -21,7 +21,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Contact />} />
+        <Route exact path="/" element={<LandingPage />} />
+        <Route exact path="/home" element={<LandingPage />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/properties" element={<PropertyGrid />} />
         <Route exact path="/contact" element={<Contact />} />

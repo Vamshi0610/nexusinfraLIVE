@@ -22,7 +22,7 @@ export default function LandingPage() {
     <>
       <div className="click-closed"></div>
 
-      <Header />
+      <Header activeTab="home"/>
 
       {/* ======= Intro Section ======= */}
       <div className="intro intro-carousel swiper position-relative">
@@ -930,7 +930,7 @@ export default function LandingPage() {
       {/* End #main */}
 
       {/* ======= Footer ======= */}
-      <Footer />
+      <Footer activeTab="home"/>
       {/* End  Footer */}
 
       {/* <div id="preloader"></div>

@@ -1,4 +1,7 @@
-export default function Footer() {
+import { useNavigate } from "react-router-dom";
+
+export default function Footer(props) {
+  const navigate = useNavigate();
   return (
     <>
       <section class="section-footer">
@@ -79,17 +82,17 @@ export default function Footer() {
             <div className="col-md-12">
               <nav className="nav-footer">
                 <ul className="list-inline">
-                  <li className="list-inline-item">
-                    <a href="#">Home</a>
+                  <li className={props.activeTab == "home" ? "list-inline-item active" : "list-inline-item"} onClick={() => navigate("/")}>
+                    <a>Home</a>
                   </li>
-                  <li className="list-inline-item">
-                    <a href="about.html">About</a>
+                  <li className={props.activeTab == "about" ? "list-inline-item active" : "list-inline-item"} onClick={() => navigate("/about")}>
+                    <a>About</a>
                   </li>
-                  <li className="list-inline-item">
-                    <a href="property-grid.html">Properties</a>
+                  <li className={props.activeTab == "properties" ? "list-inline-item active" : "list-inline-item"} onClick={() => navigate("/properties")}>
+                    <a>Properties</a>
                   </li>
-                  <li className="list-inline-item">
-                    <a href="contact.html">Contact</a>
+                  <li className={props.activeTab == "contact" ? "list-inline-item active" : "list-inline-item"} onClick={() => navigate("/contact")}>
+                    <a>Contact</a>
                   </li>
                 </ul>
               </nav>

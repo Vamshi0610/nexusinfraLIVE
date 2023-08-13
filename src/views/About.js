@@ -9,14 +9,16 @@ import "../assets/vendor/swiper/swiper-bundle.min.css";
 // import "../assets/js/main.js";
 import Footer from "./Footer";
 import Header from "./Header";
-import slideAbout1 from "../assets/img/slide-about-1.jpg"
+import slideAbout1 from "../assets/img/slide-about-1.jpg";
+import { useNavigate } from "react-router-dom";
 
 export default function About() {
+  const navigate = useNavigate();
   return (
     <>
       {/* ======= Property Search Section ======= */}
       <div className="click-closed"></div>
-      <Header />
+      <Header activeTab="about"/>
 
       <main id="main">
         {/* ======= Intro Single ======= */}
@@ -35,7 +37,7 @@ export default function About() {
                 >
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a href="#">Home</a>
+                      <a onClick={() => navigate("/")}>Home</a>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       About
@@ -355,7 +357,7 @@ export default function About() {
         {/* End About Section*/}
       </main>
       {/* End #main */}
-      <Footer />
+      <Footer activeTab="about"/>
     </>
   );
 }
