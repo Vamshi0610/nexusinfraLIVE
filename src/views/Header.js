@@ -28,7 +28,7 @@ export default function Header(props) {
             className="navbar-collapse collapse justify-content-center"
             id="navbarDefault"
           >
-            <ul className="navbar-nav">
+            <ul className="navbar-nav" style={{backgroundColor: 'white'}}>
               <li className="nav-item" onClick={() => navigate("/")}>
                 <a
                   className={
