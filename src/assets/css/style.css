@@ -643,6 +643,7 @@ a:hover {
 .navbar-default.navbar-reduce {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  height: 114px;
 }
 
 .navbar-default.navbar-trans .nav-item,

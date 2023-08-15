@@ -6,8 +6,8 @@ import "../assets/vendor/animate.css/animate.min.css";
 import "../assets/vendor/bootstrap/css/bootstrap.min.css";
 import "../assets/vendor/bootstrap-icons/bootstrap-icons.css";
 import "../assets/vendor/swiper/swiper-bundle.min.css";
-// import '../assets/vendor/bootstrap/js/bootstrap.bundle.min.js';
-// import "../assets/vendor/swiper/swiper-bundle.min.js";
+import "../assets/vendor/bootstrap/js/bootstrap.bundle.min.js";
+import "../assets/vendor/swiper/swiper-bundle.min.js";
 // import "../assets/vendor/php-email-form/validate.js";
 // import "../assets/js/main.js";
 import testimonial1 from "../assets/img/testimonial-1.jpg";
@@ -16,20 +16,45 @@ import CountyJewel from "../assets/img/Nexus-Elite-County-Jewel.svg";
 import property6 from "../assets/img/property-6.jpg";
 import property3 from "../assets/img/property-3.jpg";
 import property7 from "../assets/img/property-7.jpg";
+import County_Banner from "../assets/img/County_Banner.jpg";
+import Pride_Banner from "../assets/img/Pride_Banner.jpg";
+import Jewel_Banner from "../assets/img/Jewel_Banner.jpg";
+import slide3 from "../assets/img/slide-3.jpg";
+
+// import Swiper core and required modules
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 export default function LandingPage() {
   return (
     <>
       <div className="click-closed"></div>
 
-      <Header activeTab="home"/>
+      <Header activeTab="home" />
 
       {/* ======= Intro Section ======= */}
       <div className="intro intro-carousel swiper position-relative">
-        <div className="swiper-wrapper">
-          <div
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+          spaceBetween={50}
+          slidesPerView={1}
+          autoplay={true}
+          pagination={{ clickable: true }}
+          space-between="50"
+        >
+          <SwiperSlide
             className="swiper-slide carousel-item-a intro-item bg-image"
-            style={{ backgroundImage: "url(assets/img/County_Banner.jpg)" }}
+            style={{ backgroundImage: `url(${County_Banner})` }}
           >
             <div className="overlay overlay-a"></div>
             <div className="intro-content display-table">
@@ -41,17 +66,13 @@ export default function LandingPage() {
                         {/* <p className="intro-title-top">Doral, Florida
                       <br/> 78345
                     </p> */}
-                        <img
-                          src={CountyJewel}
-                          alt=""
-                          className="img-fluid"
-                        />
+                        {/* <img src={CountyJewel} alt="" className="img-fluid" /> */}
                         <h1 className="intro-title mb-4 ">
                           <span className="color-b">NexusElite County </span>
                           <br />
                         </h1>
                         <p className="intro-subtitle intro-price">
-                          <a href="#">
+                          <a>
                             <span className="price-a">
                               kukunoorpally, Siddipet
                             </span>
@@ -63,10 +84,10 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-          </div>
-          <div
+          </SwiperSlide>
+          <SwiperSlide
             className="swiper-slide carousel-item-a intro-item bg-image"
-            style={{ backgroundImage: "url(assets/img/Pride_Banner.jpg)" }}
+            style={{ backgroundImage: `url(${Pride_Banner})` }}
           >
             <div className="overlay overlay-a"></div>
             <div className="intro-content display-table">
@@ -78,18 +99,14 @@ export default function LandingPage() {
                         {/* <p className="intro-title-top">Doral, Florida
                       <br/> 78345
                     </p> */}
-                        <img
-                          src={CountyJewel}
-                          alt=""
-                          className="img-fluid"
-                        />
+                        {/* <img src={CountyJewel} alt="" className="img-fluid" /> */}
 
                         <h1 className="intro-title mb-4">
                           <span className="color-b">NexusElite Pride </span>
                           <br />
                         </h1>
                         <p className="intro-subtitle intro-price">
-                          <a href="#">
+                          <a>
                             <span className="price-a">
                               Bogaram, keesara, Hyderabad
                             </span>
@@ -101,10 +118,10 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-          </div>
-          <div
+          </SwiperSlide>
+          <SwiperSlide
             className="swiper-slide carousel-item-a intro-item bg-image"
-            style={{ backgroundImage: "url(assets/img/Jewel_Banner.jpg)" }}
+            style={{ backgroundImage: `url(${Jewel_Banner})` }}
           >
             <div className="overlay overlay-a"></div>
             <div className="intro-content display-table">
@@ -116,18 +133,14 @@ export default function LandingPage() {
                         {/* <p className="intro-title-top">Doral, Florida
                       <br/> 78345
                     </p> */}
-                        <img
-                          src={CountyJewel}
-                          alt=""
-                          className="img-fluid"
-                        />
+                        {/* <img src={CountyJewel} alt="" className="img-fluid" /> */}
 
                         <h1 className="intro-title mb-4">
                           <span className="color-b">NexusElite Jewel </span>
                           <br />
                         </h1>
                         <p className="intro-subtitle intro-price">
-                          <a href="#">
+                          <a>
                             <span className="price-a">Bhongir</span>
                           </a>
                         </p>
@@ -137,10 +150,10 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-          </div>
-          <div
+          </SwiperSlide>
+          <SwiperSlide
             className="swiper-slide carousel-item-a intro-item bg-image"
-            style={{ backgroundImage: "url(assets/img/slide-3.jpg)" }}
+            style={{ backgroundImage: `url(${slide3})` }}
           >
             <div className="overlay overlay-a"></div>
             <div className="intro-content display-table">
@@ -152,18 +165,14 @@ export default function LandingPage() {
                         {/* <p className="intro-title-top">Doral, Florida
                       <br/> 78345
                     </p> */}
-                        <img
-                          src={CountyJewel}
-                          alt=""
-                          className="img-fluid"
-                        />
+                        {/* <img src={CountyJewel} alt="" className="img-fluid" /> */}
 
                         <h1 className="intro-title mb-4">
                           <span className="color-b">NexusElite Platinum</span>
                           <br />
                         </h1>
                         <p className="intro-subtitle intro-price">
-                          <a href="#">
+                          <a>
                             <span className="price-a">Raigir</span>
                           </a>
                         </p>
@@ -173,8 +182,8 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </SwiperSlide>
+        </Swiper>
         <div className="swiper-pagination"></div>
       </div>
       {/* End Intro Section */}
@@ -203,11 +212,7 @@ export default function LandingPage() {
                 <div className="carousel-item-b swiper-slide">
                   <div className="card-box-a card-shadow">
                     <div className="img-box-a">
-                      <img
-                        src={property6}
-                        alt=""
-                        className="img-a img-fluid"
-                      />
+                      <img src={property6} alt="" className="img-a img-fluid" />
                       <div className="property-status">Upcoming</div>
                     </div>
                     <div className="card-overlay">
@@ -261,11 +266,7 @@ export default function LandingPage() {
                 <div className="carousel-item-b swiper-slide">
                   <div className="card-box-a card-shadow">
                     <div className="img-box-a">
-                      <img
-                        src={property3}
-                        alt=""
-                        className="img-a img-fluid"
-                      />
+                      <img src={property3} alt="" className="img-a img-fluid" />
                       <div className="property-status">Completed</div>
                     </div>
                     <div className="card-overlay">
@@ -320,11 +321,7 @@ export default function LandingPage() {
                 <div className="carousel-item-b swiper-slide">
                   <div className="card-box-a card-shadow">
                     <div className="img-box-a">
-                      <img
-                        src={property7}
-                        alt=""
-                        className="img-a img-fluid"
-                      />
+                      <img src={property7} alt="" className="img-a img-fluid" />
                       <div className="property-status">On-Going</div>
                     </div>
                     <div className="card-overlay">
@@ -930,7 +927,7 @@ export default function LandingPage() {
       {/* End #main */}
 
       {/* ======= Footer ======= */}
-      <Footer activeTab="home"/>
+      <Footer activeTab="home" />
       {/* End  Footer */}
 
       {/* <div id="preloader"></div>
