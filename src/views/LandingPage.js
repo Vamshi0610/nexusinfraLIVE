@@ -8,7 +8,7 @@ import "../assets/vendor/bootstrap-icons/bootstrap-icons.css";
 import "../assets/vendor/swiper/swiper-bundle.min.css";
 // import "../assets/vendor/bootstrap/js/bootstrap.bundle.min.js";
 import 'bootstrap/dist/js/bootstrap.js';
-import "../assets/vendor/swiper/swiper-bundle.min.js";
+// import "../assets/vendor/swiper/swiper-bundle.min.js";
 // import "../assets/vendor/php-email-form/validate.js";
 // import "../assets/js/main.js";
 import testimonial1 from "../assets/img/testimonial-1.jpg";
