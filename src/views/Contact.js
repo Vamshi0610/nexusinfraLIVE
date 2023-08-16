@@ -8,14 +8,13 @@ import successToast from "../assets/img/successToast.jpg";
 
 export default function Contact() {
   const [msgSuccess, setMsgSuccess] = useState(false);
-  const [showToastMsg, setShowToastMsg] = useState("try again! Error occured");
+  const [showToastMsg, setShowToastMsg] = useState("");
   const formRef = React.useRef();
   const navigate = useNavigate();
   const sendanemail = (e) => {
     e.preventDefault();
     console.log("formRef", formRef);
     var x = document.getElementById("toast");
-    x.className = "show";
     emailjs
       .sendForm(
         "service_2u0qt1p",
@@ -25,19 +24,22 @@ export default function Contact() {
       )
       .then(
         function (response) {
+          x.className = "show";
           setMsgSuccess(true);
           console.log("SUCCESS!", response.status, response.text);
-          document.getElementById("anchorMail").reset();
           setShowToastMsg("Submitted successfully");
         },
         function (error) {
+          x.className = "show";
           setMsgSuccess(false);
           console.log("FAILED...", error);
-          document.getElementById("anchorMail").reset();
           setShowToastMsg("Error occured, Try again");
         }
       );
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+    document.getElementById("anchorMail").reset();
+    setTimeout(function () {
+      x.className = x.className.replace("show", "");
+    }, 5000);
   };
   return (
     <>
