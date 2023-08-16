@@ -44,11 +44,14 @@ export default function Header(props) {
               onclick="event.stopPropagation()"
               style={{ backgroundColor: "white" }}
             >
-              <li className="nav-item" onClick={() => {
-              navigate("/");
-              props.setOpenPropertyDetails &&
-                props.setOpenPropertyDetails(false);
-            }}>
+              <li
+                className="nav-item"
+                onClick={() => {
+                  navigate("/");
+                  props.setOpenPropertyDetails &&
+                    props.setOpenPropertyDetails(false);
+                }}
+              >
                 <a
                   className={
                     props.activeTab == "home" ? "nav-link active" : "nav-link"
@@ -57,7 +60,14 @@ export default function Header(props) {
                   Home
                 </a>
               </li>
-              <li className="nav-item" onClick={() => navigate("/about")}>
+              <li
+                className="nav-item"
+                onClick={() => {
+                  navigate("/about");
+                  props.setOpenPropertyDetails &&
+                    props.setOpenPropertyDetails(false);
+                }}
+              >
                 <a
                   className={
                     props.activeTab == "about" ? "nav-link active" : "nav-link"
@@ -77,7 +87,14 @@ export default function Header(props) {
                   Properties
                 </a>
               </li>
-              <li className="nav-item" onClick={() => navigate("/contact")}>
+              <li
+                className="nav-item"
+                onClick={() => {
+                  navigate("/contact");
+                  props.setOpenPropertyDetails &&
+                    props.setOpenPropertyDetails(false);
+                }}
+              >
                 <a
                   className={
                     props.activeTab == "contact"

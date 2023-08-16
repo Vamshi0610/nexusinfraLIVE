@@ -2194,6 +2194,9 @@ a:hover {
 .section-footer ul {
   line-height: 2;
 }
+.section-footer ul li{
+  cursor: pointer;
+}
 
 .section-footer .item-list-a i {
   font-size: 18px;

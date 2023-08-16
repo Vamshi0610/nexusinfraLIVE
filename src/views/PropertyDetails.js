@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import { useNavigate } from "react-router-dom";
@@ -25,6 +26,9 @@ import "swiper/css/scrollbar"
 export default function PropertyDetails(props) {
   const navigate = useNavigate();
   const details = props.details[0];
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [details])
   return (
     <>
       {console.log("DETAILS", props, details)}

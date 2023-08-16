@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 export default function Footer(props) {
+  const {handlePropertySelect} = props
   const navigate = useNavigate();
   return (
     <>
@@ -55,19 +56,39 @@ export default function Footer(props) {
                   <ul class="list-unstyled">
                     <li class="item-list-a">
                       <i class="bi bi-chevron-right"></i>{" "}
-                      <a href="NexusEliteCounty.html">NexusElite County</a>
+                      <a
+                        onClick={() =>
+                          handlePropertySelect("NexusElite County")
+                        }
+                      >
+                        NexusElite County
+                      </a>
                     </li>
                     <li class="item-list-a">
                       <i class="bi bi-chevron-right"></i>{" "}
-                      <a href="NexusElitePride.html">NexusElite Pride</a>
+                      <a
+                        onClick={() => handlePropertySelect("NexusElite Pride")}
+                      >
+                        NexusElite Pride
+                      </a>
                     </li>
                     <li class="item-list-a">
                       <i class="bi bi-chevron-right"></i>{" "}
-                      <a href="NexusEliteJewel.html">NexusElite Jewel</a>
+                      <a
+                        onClick={() => handlePropertySelect("NexusElite Jewel")}
+                      >
+                        NexusElite Jewel
+                      </a>
                     </li>
                     <li class="item-list-a">
                       <i class="bi bi-chevron-right"></i>{" "}
-                      <a href="NexusElitePlatinum.html">NexusElite Platinum</a>
+                      <a
+                        onClick={() =>
+                          handlePropertySelect("NexusElite Platinum")
+                        }
+                      >
+                        NexusElite Platinum
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -82,16 +103,28 @@ export default function Footer(props) {
             <div className="col-md-12">
               <nav className="nav-footer">
                 <ul className="list-inline">
-                  <li className={props.activeTab == "home" ? "list-inline-item active" : "list-inline-item"} onClick={() => navigate("/")}>
+                  <li
+                    className="list-inline-item"
+                    onClick={() => navigate("/")}
+                  >
                     <a>Home</a>
                   </li>
-                  <li className={props.activeTab == "about" ? "list-inline-item active" : "list-inline-item"} onClick={() => navigate("/about")}>
+                  <li
+                    className="list-inline-item"
+                    onClick={() => navigate("/about")}
+                  >
                     <a>About</a>
                   </li>
-                  <li className={props.activeTab == "properties" ? "list-inline-item active" : "list-inline-item"} onClick={() => navigate("/properties")}>
+                  <li
+                    className="list-inline-item"
+                    onClick={() => navigate("/properties")}
+                  >
                     <a>Properties</a>
                   </li>
-                  <li className={props.activeTab == "contact" ? "list-inline-item active" : "list-inline-item"} onClick={() => navigate("/contact")}>
+                  <li
+                    className="list-inline-item"
+                    onClick={() => navigate("/contact")}
+                  >
                     <a>Contact</a>
                   </li>
                 </ul>
@@ -116,8 +149,7 @@ export default function Footer(props) {
                   </li>
                 </ul>
               </div>
-              <div className="credits">
-              </div>
+              <div className="credits"></div>
             </div>
           </div>
         </div>
