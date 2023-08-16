@@ -98,7 +98,7 @@ export default function LandingPage(props) {
                             <p className="intro-subtitle intro-price">
                               <a>
                                 <span className="price-a">
-                                  kukunoorpally, Siddipet
+                                  kukunooripally, Siddipet
                                 </span>
                               </a>
                             </p>
@@ -136,7 +136,9 @@ export default function LandingPage(props) {
                             <p className="intro-subtitle intro-price">
                               <a>
                                 <span className="price-a">
-                                  Bogaram, keesara, Hyderabad
+                                  {window.innerWidth > 426
+                                      ? "Bogaram, keesara, Hyderabad"
+                                      : "Bogaram, Hyderabad"}
                                 </span>
                               </a>
                             </p>

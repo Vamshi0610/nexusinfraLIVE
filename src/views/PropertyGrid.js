@@ -113,7 +113,7 @@ export default function PropertyGrid(props) {
                         <div className="card-body-a">
                           <div className="price-box d-flex">
                             <span className="price-a">
-                              kukunoorpally, Siddipet
+                              kukunooripally, Siddipet
                             </span>
                           </div>
                           <a
