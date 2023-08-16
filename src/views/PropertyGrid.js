@@ -5,7 +5,7 @@ import NexusEliteCounty from "../assets/img/property-1.jpg";
 import NexusElitePrideImage from "../assets/img/property-3.jpg";
 import NexusEliteJewel from "../assets/img/property-6.jpg";
 import NexusElitePlatinum from "../assets/img/property-6.jpg";
-import NexusElitePride from "./PropertyDetails";
+import PropertyDetails from "./PropertyDetails";
 import jewel_layoutGallery1 from "../assets/img/jewel_layoutGallery1.png";
 import jewel_layoutGallery2 from "../assets/img/jewel_layoutGallery2.JPG";
 import jewel_layoutGallery3 from "../assets/img/jewel_layoutGallery3.JPG";
@@ -34,19 +34,24 @@ export default function PropertyGrid() {
         "The HMDA approved “NexusElite – Pride” plots at Bogaram, keesara, Hyderabad offer all the basic features such as CC roads, Vaastu compliance, Underground Electrical distribution network for the power supply and designer street lighting, Internet, beautiful landscaping, Compound Wall, Designed Front wall, Overhead Water Tank, Arch Gate, Each block with Granite Basement, 40 and 30 feets Cement Roads (CC), Footpath (Chambers - Power, Drainage and Harvesting pits), Every Plot with Individual Cement Ramp, Septic Tank, Underground Drainage System, Underground water supply line to each plot, Park (Open Gym, Pergola, Walkway, Cycling bay, Children play area etc.,), Avenue Plantation, Matting Curbing stones on both sides of the road, Water Harvesting pits, Name Boards, The landscape of Open Areas, 24/7 Security, 24/7 Engineering and Architect services, Site and Marketing Office",
       projectHighlights: [
         "Cement Road",
-        "Underground Electricity",
-        "24x7 Security",
+        "Overhead Electricity",
         "Each Polt with ramp",
-        "40'' & 30'' Feet wide road",
+        "40'' & 30'' feet wide road",
+        "24x7 Security",
+        "Children's park",
+        "Club House",
         "Beautiful entrance arch",
-        "Each block of Plots CRS wall",
+        "Each block of plots with granite basement",
       ],
       locationHighlights: [
-        "10 Mins drive to ORR",
-        "15 mins drive to Pocharam SEZ",
-        "Beside Holy Mary Engineer College",
-        "5 Mins drive to Ghatkesar or Keesara",
-        "30 mins drive ECIL X Road or Uppal Circle",
+        "40 mins drive to ORR",
+        "Attached to Karimnagar highway",
+        "8 mins drive to kondapochamma temple",
+        "10 mins drive to pragnapoor junction",
+        "15 mins drive to proposed Duddeda IT Hub",
+        "30 mins drive Biotech park Turkapally",
+        "Close to Mallanna sagar reservoir (proposed tourism project)",
+        "15 mins drive to Siddipet integrated collectorate office",
       ],
       QuickSummary: [
         {
@@ -209,7 +214,7 @@ export default function PropertyGrid() {
       <Header activeTab="properties" />
 
       {openPropertyDetails ? (
-        <NexusElitePride
+        <PropertyDetails
           details={propertyDetails}
           setOpenPropertyDetails={setOpenPropertyDetails}
         />
@@ -264,7 +269,7 @@ export default function PropertyGrid() {
                   </form>
                 </div>
               </div> */}
-                <div className="col-md-4">
+                <div className="col-xl-4 col-lg-6 col-sm-6">
                   <div className="card-box-a card-shadow">
                     <div className="img-box-a">
                       <img
@@ -326,7 +331,7 @@ export default function PropertyGrid() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-xl-4 col-lg-6 col-sm-6">
                   <div className="card-box-a card-shadow">
                     <div className="img-box-a">
                       <img
@@ -385,7 +390,7 @@ export default function PropertyGrid() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-xl-4 col-lg-6 col-sm-6">
                   <div className="card-box-a card-shadow">
                     <div className="img-box-a">
                       <img
@@ -445,7 +450,7 @@ export default function PropertyGrid() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-xl-4 col-lg-6 col-sm-6">
                   <div className="card-box-a card-shadow">
                     <div className="img-box-a">
                       <img
@@ -503,7 +508,7 @@ export default function PropertyGrid() {
                     </div>
                   </div>
                 </div>
-                {/* <div className="col-md-4">
+                {/* <div className="col-xl-4 col-lg-4 col-sm-6">
                 <div className="card-box-a card-shadow">
                   <div className="img-box-a">
                     <img src="assets/img/property-7.jpg" alt="" className="img-a img-fluid">
@@ -550,7 +555,7 @@ export default function PropertyGrid() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-xl-4 col-lg-4 col-sm-6">
                 <div className="card-box-a card-shadow">
                   <div className="img-box-a">
                     <img src="assets/img/property-8.jpg" alt="" className="img-a img-fluid">
@@ -597,7 +602,7 @@ export default function PropertyGrid() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-xl-4 col-lg-4 col-sm-6">
                 <div className="card-box-a card-shadow">
                   <div className="img-box-a">
                     <img src="assets/img/property-10.jpg" alt="" className="img-a img-fluid">
@@ -678,7 +683,7 @@ export default function PropertyGrid() {
         </main>
       )}
       {/* End #main */}
-      {/* {openPropertyDetails && <NexusElitePride details={propertyDetails} />} */}
+      {/* {openPropertyDetails && <PropertyDetails details={propertyDetails} />} */}
       <Footer activeTab="properties" />
     </>
   );

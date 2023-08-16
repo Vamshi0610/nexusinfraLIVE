@@ -10,7 +10,18 @@ import pride_LayoutGallery3 from "../assets/img/pride_LayoutGallery3.jpg";
 import pride_LayoutGallery4 from "../assets/img/pride_LayoutGallery4.jpg";
 import pride_LayoutGallery5 from "../assets/img/pride_LayoutGallery5.jpg";
 import pride_LayoutGallery6 from "../assets/img/pride_LayoutGallery6.jpg";
-
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar"
 export default function PropertyDetails(props) {
   const navigate = useNavigate();
   const details = props.details[0];
@@ -19,7 +30,7 @@ export default function PropertyDetails(props) {
       {console.log("DETAILS", props, details)}
       {/* ======= Property Search Section ======= */}
       <div className="click-closed"></div>
-      <Header />
+      <Header activeTab = "properties" setOpenPropertyDetails={props.setOpenPropertyDetails}/>
       <main id="main">
         {/* ======= Intro Single ======= */}
         <section className="intro-single">
@@ -253,30 +264,34 @@ export default function PropertyDetails(props) {
                     </li>
                   )}
                   <li className="nav-item">
-                    {details.projectLayouts && <a
-                      className="nav-link"
-                      id="pills-plans-tab"
-                      data-bs-toggle="pill"
-                      href="#pills-plans"
-                      role="tab"
-                      aria-controls="pills-plans"
-                      aria-selected="false"
-                    >
-                      Project Layout
-                    </a>}
+                    {details.projectLayouts && (
+                      <a
+                        className={details.youtubeLink ? "nav-link": "nav-link active"}
+                        id="pills-plans-tab"
+                        data-bs-toggle="pill"
+                        href="#pills-plans"
+                        role="tab"
+                        aria-controls="pills-plans"
+                        aria-selected="false"
+                      >
+                        Project Layout
+                      </a>
+                    )}
                   </li>
                   <li className="nav-item">
-                    {details.galleryLayouts && <a
-                      className="nav-link"
-                      id="pills-map-tab"
-                      data-bs-toggle="pill"
-                      href="#pills-map"
-                      role="tab"
-                      aria-controls="pills-map"
-                      aria-selected="false"
-                    >
-                      Layout Gallery
-                    </a>}
+                    {details.galleryLayouts && (
+                      <a
+                        className="nav-link"
+                        id="pills-map-tab"
+                        data-bs-toggle="pill"
+                        href="#pills-map"
+                        role="tab"
+                        aria-controls="pills-map"
+                        aria-selected="false"
+                      >
+                        Layout Gallery
+                      </a>
+                    )}
                   </li>
                 </ul>
                 <div className="tab-content" id="pills-tabContent">
@@ -298,86 +313,77 @@ export default function PropertyDetails(props) {
                       ></iframe>
                     </div>
                   )}
-                  {details.projectLayouts.map(each => <div
-                    className="tab-pane fade"
-                    id="pills-plans"
-                    role="tabpanel"
-                    aria-labelledby="pills-plans-tab"
-                  >
-                    <img
-                      src={each}
-                      alt=""
-                      className="img-fluid"
-                      width="100%"
-                      height="460"
-                    />
-                  </div>)}
+                  {details.projectLayouts?.map((each) => (
+                    <div
+                      className={details.youtubeLink ? "tab-pane fade" :"tab-pane fade show active"}
+                      id="pills-plans"
+                      role="tabpanel"
+                      aria-labelledby="pills-plans-tab"
+                    >
+                      <img
+                        src={each}
+                        alt=""
+                        className="img-fluid"
+                        width="100%"
+                        height="460"
+                      />
+                    </div>
+                  ))}
                   <div
                     className="tab-pane fade"
                     id="pills-map"
                     role="tabpanel"
                     aria-labelledby="pills-map-tab"
                   >
-                    <div id="property-carousel" className="swiper">
-                      <div className="swiper-wrapper">
-                      {/* {details.galleryLayouts.map(each =>  */}
-                      <div className="swiper-slide carousel-item-a intro-item bg-image">
-                        <img
-                            src={pride_LayoutGallery2}
-                            alt=""
-                            className="img-fluid"
-                            width="100%"
-                            height="460"
-                          />
-                        </div>
+                    <div id="property-carousel" className="testimonial-intro pagination-bottom swiper">
+                        <Swiper
+                          modules={[
+                            Navigation,
+                            Pagination,
+                            Scrollbar,
+                            A11y,
+                            Autoplay,
+                          ]}
+                          breakpoints={{
+                            // when window width is >= 320px
+                            320: {
+                              slidesPerView: 1,
+                              spaceBetween: 20,
+                            },
+                            // when window width is >= 640px
+                            1024: {
+                              slidesPerView: 2,
+                              spaceBetween: 40,
+                            },
+                            // when window width is >= 640px
+                            1140: {
+                              slidesPerView: 3,
+                              spaceBetween: 40,
+                            },
+                          }}
+                          spaceBetween={50}
+                          slidesPerView={1.5}
+                          autoplay={true}
+                          pagination={{ clickable: true }}
+                          space-between="50"
+                        >
+                        <div className="swiper-wrapper">
+                          {details.galleryLayouts?.map((each) => (
+                            <SwiperSlide className="swiper-slide carousel-item-a intro-item bg-image">
+                              <img
+                                src={each}
+                                alt=""
+                                className="img-fluid"
+                                width="100%"
+                                height="460"
+                              />
+                            </SwiperSlide>
+                          ))}
+                          </div>
+                        </Swiper>
                         {/* // )} */}
-                        <div className="swiper-slide carousel-item-a intro-item bg-image">
-                          <img
-                            src={pride_LayoutGallery2}
-                            alt=""
-                            className="img-fluid"
-                            width="100%"
-                            height="460"
-                          />
-                        </div>
-                        <div className="swiper-slide carousel-item-a intro-item bg-image">
-                          <img
-                            src={pride_LayoutGallery3}
-                            alt=""
-                            className="img-fluid"
-                            width="100%"
-                            height="460"
-                          />
-                        </div>
-                        <div className="swiper-slide carousel-item-a intro-item bg-image">
-                          <img
-                            src={pride_LayoutGallery4}
-                            alt=""
-                            className="img-fluid"
-                            width="100%"
-                            height="460"
-                          />
-                        </div>
-                        <div className="swiper-slide carousel-item-a intro-item bg-image">
-                          <img
-                            src={pride_LayoutGallery5}
-                            alt=""
-                            className="img-fluid"
-                            width="100%"
-                            height="460"
-                          />
-                        </div>
-                        <div className="swiper-slide carousel-item-a intro-item bg-image">
-                          <img
-                            src={pride_LayoutGallery6}
-                            alt=""
-                            className="img-fluid"
-                            width="100%"
-                            height="460"
-                          />
-                        </div>
-                      </div>
-                      <div className="propery-carousel-pagination carousel-pagination"></div>
+                        
+                        <div className="propery-carousel-pagination carousel-pagination"></div>
                     </div>
                   </div>
                 </div>

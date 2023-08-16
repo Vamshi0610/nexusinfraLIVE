@@ -1,15 +1,21 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import emailjs from "@emailjs/browser";
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import errorToast from "../assets/img/errorToast.jpg";
+import successToast from "../assets/img/successToast.jpg";
 
 export default function Contact() {
+  const [msgSuccess, setMsgSuccess] = useState(false);
+  const [showToastMsg, setShowToastMsg] = useState("try again! Error occured");
   const formRef = React.useRef();
   const navigate = useNavigate();
   const sendanemail = (e) => {
     e.preventDefault();
     console.log("formRef", formRef);
+    var x = document.getElementById("toast");
+    x.className = "show";
     emailjs
       .sendForm(
         "service_2u0qt1p",
@@ -19,21 +25,24 @@ export default function Contact() {
       )
       .then(
         function (response) {
+          setMsgSuccess(true);
           console.log("SUCCESS!", response.status, response.text);
           document.getElementById("anchorMail").reset();
-          window.alert("Sent successfully");
+          setShowToastMsg("Submitted successfully");
         },
         function (error) {
+          setMsgSuccess(false);
           console.log("FAILED...", error);
           document.getElementById("anchorMail").reset();
-          window.alert("Failed! PLease try again");
+          setShowToastMsg("Error occured, Try again");
         }
       );
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
   };
   return (
     <>
       <div className="click-closed"></div>
-      <Header activeTab="contact"/>
+      <Header activeTab="contact" />
 
       <main id="main">
         {/* ======= Intro Single ======= */}
@@ -278,8 +287,17 @@ export default function Contact() {
         {/* End Contact Single*/}
       </main>
       {/* End #main */}
-
-      <Footer activeTab="contact"/>
+      <div id="toast">
+        <div id="img">
+          <img
+            src={msgSuccess ? successToast : errorToast}
+            height="25px"
+            weight="25px"
+          />
+        </div>
+        <div id="desc">{showToastMsg}</div>
+      </div>
+      <Footer activeTab="contact" />
 
       {/* <div id="preloader"></div>
           <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i
