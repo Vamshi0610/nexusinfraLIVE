@@ -84,10 +84,10 @@ export default function Footer(props) {
                       <i class="bi bi-chevron-right"></i>{" "}
                       <a
                         onClick={() =>
-                          handlePropertySelect("NexusElite Platinum")
+                          handlePropertySelect("NexusElite Platina")
                         }
                       >
-                        NexusElite Platinum
+                        NexusElite Platina
                       </a>
                     </li>
                   </ul>

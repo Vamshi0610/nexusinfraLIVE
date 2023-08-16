@@ -27,7 +27,7 @@ export default function Header(props) {
           <img
             src={NexusEliteLogo}
             height="80px"
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer" , marginRight: "30px"}}
             onClick={() => {
               navigate("/");
               props.setOpenPropertyDetails &&

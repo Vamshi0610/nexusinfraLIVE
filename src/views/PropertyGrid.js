@@ -9,7 +9,6 @@ import PropertyDetails from "./PropertyDetails";
 import { useState, useEffect } from "react";
 
 export default function PropertyGrid(props) {
-  
   const navigate = useNavigate();
   const [propertyDetails, setPropertyDetails] = useState([]);
   const [openPropertyDetails, setOpenPropertyDetails] = useState(false);
@@ -21,8 +20,8 @@ export default function PropertyGrid(props) {
     // navigate("/nexusElitePride")
   };
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       {console.log(
@@ -252,13 +251,13 @@ export default function PropertyGrid(props) {
                             <li>
                               <h4 className="card-info-title">Acres</h4>
                               <span>
-                                13.65
+                                10.5
                                 {/* <sup>2</sup> */}
                               </span>
                             </li>
                             <li>
                               <h4 className="card-info-title">No.of Plots</h4>
-                              <span>101</span>
+                              <span>154</span>
                             </li>
                             <li>
                               <h4 className="card-info-title">
@@ -287,7 +286,7 @@ export default function PropertyGrid(props) {
                         <div className="card-header-a">
                           <h2 className="card-title-a">
                             <a href="#">
-                              NexusElite Platinum
+                              NexusElite Platina
                               <br />{" "}
                             </a>
                           </h2>
@@ -298,7 +297,7 @@ export default function PropertyGrid(props) {
                           </div>
                           <a
                             onClick={() =>
-                              handlePropertySelect("NexusElite Platinum")
+                              handlePropertySelect("NexusElite Platina")
                             }
                             //   onClick={() => navigate("/nexusElitePride")}
                             className="link-a"
@@ -506,7 +505,7 @@ export default function PropertyGrid(props) {
       )}
       {/* End #main */}
       {/* {openPropertyDetails && <PropertyDetails details={propertyDetails} />} */}
-      <Footer handlePropertySelect={handlePropertySelect}/>
+      <Footer handlePropertySelect={handlePropertySelect} />
     </>
   );
 }

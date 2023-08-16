@@ -47,8 +47,8 @@ export default function LandingPage(props) {
     // navigate("/nexusElitePride")
   };
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="click-closed"></div>
@@ -186,7 +186,7 @@ export default function LandingPage(props) {
               <SwiperSlide
                 className="swiper-slide carousel-item-a intro-item bg-image"
                 style={{ backgroundImage: `url(${slide3})`, cursor: "pointer" }}
-                onClick={() => handlePropertySelect("NexusElite Platinum")}
+                onClick={() => handlePropertySelect("NexusElite Platina")}
               >
                 <div className="overlay overlay-a"></div>
                 <div className="intro-content display-table">
@@ -202,7 +202,7 @@ export default function LandingPage(props) {
 
                             <h1 className="intro-title mb-4">
                               <span className="color-b">
-                                NexusElite Platinum
+                                NexusElite Platina
                               </span>
                               <br />
                             </h1>
@@ -290,7 +290,7 @@ export default function LandingPage(props) {
                               <div className="card-header-a">
                                 <h2 className="card-title-a">
                                   {/* <a href="NexusEliteCounty.html"> */}
-                                  NexusElite Platinum
+                                  NexusElite Platina
                                   <br />
                                   {/* </a> */}
                                 </h2>
@@ -301,7 +301,7 @@ export default function LandingPage(props) {
                                 </div>
                                 <a
                                   onClick={() =>
-                                    handlePropertySelect("NexusElite Platinum")
+                                    handlePropertySelect("NexusElite Platina")
                                   }
                                   className="link-a"
                                 >
@@ -443,7 +443,7 @@ export default function LandingPage(props) {
                                   <li>
                                     <h4 className="card-info-title">Acres</h4>
                                     <span>
-                                      13.65
+                                      10.5
                                       {/* <sup>2</sup> */}
                                     </span>
                                   </li>
@@ -451,7 +451,7 @@ export default function LandingPage(props) {
                                     <h4 className="card-info-title">
                                       No.of Plots
                                     </h4>
-                                    <span>101</span>
+                                    <span>154</span>
                                   </li>
                                   <li>
                                     <h4 className="card-info-title">
@@ -1006,7 +1006,7 @@ export default function LandingPage(props) {
       )}
       {/* End #main */}
 
-      <Footer handlePropertySelect={handlePropertySelect}/>
+      <Footer handlePropertySelect={handlePropertySelect} />
     </>
   );
 }

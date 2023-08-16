@@ -122,7 +122,7 @@ function App() {
         pride_LayoutGallery5,
         pride_LayoutGallery6,
       ],
-      youtubeLink: "https://www.youtube.com/embed/0cB0sUzcijY",
+      // youtubeLink: "https://www.youtube.com/embed/0cB0sUzcijY",
     },
     {
       name: "NexusElite Jewel",
@@ -156,8 +156,8 @@ function App() {
         {
           developerName: "NexusElite Infra Developers",
           projectName: "NexusElite Jewel",
-          extent: "13.65 Acres",
-          totalPlots: "101",
+          extent: "10.5 Acres",
+          totalPlots: "154",
           minPlotSize: "167 Sq.yrds",
           permission: "DTCP",
           zone: "Not Applicable",
@@ -173,7 +173,7 @@ function App() {
       // youtubeLink:"https://www.youtube.com/channel/UCDKluTsm6xhLKahU9EJtWRw"
     },
     {
-      name: "NexusElite Platinum",
+      name: "NexusElite Platina",
       location: "Raigir",
       description:
         "The YTDA approved “NexusElite – Platinum” plots at Warangal Highway ( Adjacent to Vivera Hotel ) offer all the basic features such as Club House (Library, Indoor Gym, Rooms, Kitchen etc.,), CC roads, Vaastu compliance, Underground Electrical distribution network for the power supply and designer street lighting, Internet, beautiful landscaping, Compound Wall, Designed Front wall, Overhead Water Tank, Arch Gate, Each block with Granite Basement, 40 and 30 feets Cement Roads (CC), Footpath (Chambers - Power, Drainage and Harvesting pits), Every Plot with Individual Cement Ramp, Septic Tank, Underground Drainage System, Underground water supply line to each plot, Park (Open Gym, Pergola, Walkway, Cycling bay, Children play area etc.,), Avenue Plantation, Matting Curbing stones on both sides of the road, Water Harvesting pits, Name Boards, The landscape of Open Areas, 24/7 Security, 24/7 Engineering and Architect services, Site and Marketing Office.",
@@ -182,7 +182,7 @@ function App() {
       QuickSummary: [
         {
           developerName: "NexusElite Infra Developers",
-          projectName: "NexusElite Platinum",
+          projectName: "NexusElite Platina",
           extent: "20 Acres",
           // totalPlots: "100",
           // minPlotSize: "167 Sq.yrds",
