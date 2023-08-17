@@ -105,25 +105,41 @@ export default function Footer(props) {
                 <ul className="list-inline">
                   <li
                     className="list-inline-item"
-                    onClick={() => navigate("/")}
+                    onClick={() => {
+                      navigate("/");
+                      props.setOpenPropertyDetails &&
+                        props.setOpenPropertyDetails(false);
+                    }}
                   >
                     <a>Home</a>
                   </li>
                   <li
                     className="list-inline-item"
-                    onClick={() => navigate("/about")}
+                    onClick={() => {
+                      navigate("/about");
+                      props.setOpenPropertyDetails &&
+                        props.setOpenPropertyDetails(false);
+                    }}
                   >
                     <a>About</a>
                   </li>
                   <li
                     className="list-inline-item"
-                    onClick={() => navigate("/properties")}
+                    onClick={() => {
+                      navigate("/properties");
+                      props.setOpenPropertyDetails &&
+                        props.setOpenPropertyDetails(false);
+                    }}
                   >
                     <a>Properties</a>
                   </li>
                   <li
                     className="list-inline-item"
-                    onClick={() => navigate("/contact")}
+                    onClick={() => {
+                      navigate("/contact");
+                      props.setOpenPropertyDetails &&
+                        props.setOpenPropertyDetails(false);
+                    }}
                   >
                     <a>Contact</a>
                   </li>
@@ -147,6 +163,21 @@ export default function Footer(props) {
                       <i className="bi bi-youtube" aria-hidden="true"></i>
                     </a>
                   </li>
+                  {/* <li className="list-inline-item">
+                    <a href="" target="_blank">
+                      <i className="bi bi-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a href="" target="_blank">
+                      <i className="bi bi-whatsapp" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a href="" target="_blank">
+                      <i className="bi bi-instagram" aria-hidden="true"></i>
+                    </a>
+                  </li> */}
                 </ul>
               </div>
               <div className="credits"></div>
