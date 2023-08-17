@@ -490,7 +490,7 @@ export default function PropertyDetails(props) {
         {/* End Property Single*/}
       </main>
       {/* End #main */}
-      <Footer setOpenPropertyDetails={props.setOpenPropertyDetails}/>
+      <Footer setOpenPropertyDetails={props.setOpenPropertyDetails} handlePropertySelect={props.handlePropertySelect}/>
     </>
   );
 }

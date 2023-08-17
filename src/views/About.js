@@ -219,6 +219,7 @@ export default function About() {
         <PropertyDetails
           details={propertyDetails}
           setOpenPropertyDetails={setOpenPropertyDetails}
+          handlePropertySelect={handlePropertySelect}
         />
       ) : (
         <>

@@ -217,6 +217,7 @@ export default function PropertyGrid() {
         <PropertyDetails
           details={propertyDetails}
           setOpenPropertyDetails={setOpenPropertyDetails}
+          handlePropertySelect={handlePropertySelect}
         />
       ) : (
         <>

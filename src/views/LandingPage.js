@@ -237,6 +237,7 @@ export default function LandingPage() {
         <PropertyDetails
           details={propertyDetails}
           setOpenPropertyDetails={setOpenPropertyDetails}
+          handlePropertySelect={handlePropertySelect}
         />
       ) : (
         <>

@@ -248,6 +248,7 @@ export default function Contact() {
         <PropertyDetails
           details={propertyDetails}
           setOpenPropertyDetails={setOpenPropertyDetails}
+          handlePropertySelect={handlePropertySelect}
         />
       ) : (
         <>
