@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 export default function Footer(props) {
-  const {handlePropertySelect} = props
+  const { handlePropertySelect } = props;
   const navigate = useNavigate();
   return (
     <>
@@ -149,7 +149,7 @@ export default function Footer(props) {
                 <ul className="list-inline">
                   <li className="list-inline-item">
                     <a
-                      href="https://www.facebook.com/nexuseliteinfra"
+                      href="https://www.facebook.com/profile.php?id=61550926918337"
                       target="_blank"
                     >
                       <i className="bi bi-facebook" aria-hidden="true"></i>
@@ -163,12 +163,15 @@ export default function Footer(props) {
                       <i className="bi bi-youtube" aria-hidden="true"></i>
                     </a>
                   </li>
-                  {/* <li className="list-inline-item">
-                    <a href="" target="_blank">
+                  <li className="list-inline-item">
+                    <a
+                      href="https://www.linkedin.com/company/nexus-elite-infra-developers/"
+                      target="_blank"
+                    >
                       <i className="bi bi-linkedin" aria-hidden="true"></i>
                     </a>
                   </li>
-                  <li className="list-inline-item">
+                  {/*<li className="list-inline-item">
                     <a href="" target="_blank">
                       <i className="bi bi-whatsapp" aria-hidden="true"></i>
                     </a>
