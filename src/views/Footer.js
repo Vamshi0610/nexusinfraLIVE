@@ -29,7 +29,7 @@ export default function Footer(props) {
                     </li>
                     <li class="color-a">
                       <span class="color-text-a">Email .</span>{" "}
-                      nexuseliteinfradevelopers@gmail.com
+                      info@nexuseliteinfradevelopers.com
                     </li>
                   </ul>
                 </div>

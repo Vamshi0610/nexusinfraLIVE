@@ -412,7 +412,7 @@ export default function Contact() {
                               <p className="mb-1">
                                 Email.
                                 <span className="color-a">
-                                  nexuseliteinfradevelopers@gmail.com
+                                  info@nexuseliteinfradevelopers.com
                                 </span>
                               </p>
                               <p className="mb-1">
