@@ -478,7 +478,7 @@ export default function Contact() {
                                   </li>
                                   <li className="list-inline-item">
                                     <a
-                                      href="https://www.linkedin.com/company/nexus-elite-infra-developers/"
+                                      href="https://www.linkedin.com/@nexuselite04"
                                       target="_blank"
                                     >
                                       <i
@@ -487,16 +487,16 @@ export default function Contact() {
                                       ></i>
                                     </a>
                                   </li>
-                                  {/*<li className="list-inline-item">
-                                      <a href="" target="_blank">
+                                  <li className="list-inline-item">
+                                      <a href="https://wa.link/8shgjg" target="_blank">
                                         <i className="bi bi-whatsapp" aria-hidden="true"></i>
                                       </a>
                                     </li>
                                     <li className="list-inline-item">
-                                      <a href="" target="_blank">
+                                      <a href="https://instagram.com/nexus_elite_pvtltd?igshid=MzRIODBiNWFIZA==" target="_blank">
                                         <i className="bi bi-instagram" aria-hidden="true"></i>
                                       </a>
-                                    </li> */}
+                                    </li> 
                                 </ul>
                               </div>
                             </div>

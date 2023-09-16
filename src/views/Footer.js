@@ -157,7 +157,7 @@ export default function Footer(props) {
                   </li>
                   <li className="list-inline-item">
                     <a
-                      href="https://www.youtube.com/channel/UCDKluTsm6xhLKahU9EJtWRw"
+                      href="https://www.youtube.com/@nexuselite04"
                       target="_blank"
                     >
                       <i className="bi bi-youtube" aria-hidden="true"></i>
@@ -171,16 +171,16 @@ export default function Footer(props) {
                       <i className="bi bi-linkedin" aria-hidden="true"></i>
                     </a>
                   </li>
-                  {/*<li className="list-inline-item">
-                    <a href="" target="_blank">
+                  <li className="list-inline-item">
+                    <a href="https://wa.link/8shgjg" target="_blank">
                       <i className="bi bi-whatsapp" aria-hidden="true"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="" target="_blank">
+                    <a href="https://instagram.com/nexus_elite_pvtltd?igshid=MzRIODBiNWFIZA==" target="_blank">
                       <i className="bi bi-instagram" aria-hidden="true"></i>
                     </a>
-                  </li> */}
+                  </li> 
                 </ul>
               </div>
               <div className="credits"></div>
