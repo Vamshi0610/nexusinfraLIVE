@@ -38,7 +38,7 @@ import "swiper/css/scrollbar";
 import jewel_layoutGallery1 from "../assets/img/jewel_layoutGallery1.png";
 import jewel_layoutGallery2 from "../assets/img/jewel_layoutGallery2.JPG";
 import jewel_layoutGallery3 from "../assets/img/jewel_layoutGallery3.JPG";
-import jewel_layoutGallery5 from "../assets/img/jewel_layoutGallery5.jpeg";
+import jewel_layoutGallery5 from "../assets/img/jewel_layoutGallery5.jpg";
 import jewel_projectLayout from "../assets/img/jewel_projectLayout.png";
 import pride_projectLayout from "../assets/img/pride_projectLayout.jpg";
 import pride_LayoutGallery1 from "../assets/img/pride_LayoutGallery1.jpg";
