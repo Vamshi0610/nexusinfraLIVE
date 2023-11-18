@@ -350,7 +350,7 @@ export default function About() {
                       <div className="col-md-6">
                         <div className="title-box-d about">
                           <h3 className="title-d">
-                            Plotting as a service
+                            Plotting as a Tailored service
                             {/* <span className="color-d">porttitor</span> lectus
                     <br> nibh. */}
                           </h3>

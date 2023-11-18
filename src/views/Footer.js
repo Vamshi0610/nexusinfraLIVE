@@ -21,7 +21,7 @@ export default function Footer(props) {
                     and housing solutions. We are driven by the pursuit of
                     offering affordability, amenities, and excellent
                     infrastructure to our clients. Your journey with Nexus Elite
-                    is not just about owning a property; it's about experiencing
+                    is not just about owning a property, it's about experiencing
                     the pinnacle of quality, commitment and innovation in real
                     estate development. Welcome to a future where your
                     investment transcends time and trends.
