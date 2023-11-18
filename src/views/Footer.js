@@ -8,18 +8,23 @@ export default function Footer(props) {
       <section class="section-footer">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-7">
               <div class="widget-a">
                 <div class="w-header-a">
                   <h3 class="w-title-a text-brand">About Us</h3>
                 </div>
                 <div class="w-body-a">
                   <p class="w-text-a color-text-a">
-                    The Management at Nexuselite Infra Developers has a decade
-                    of unparalleled experience in residential layouts, promoted
-                    NexuseliteInfra Developers with an objective to offer best
-                    investment and Housing Solutions to the Clients at an
-                    affordable price and amemities with the good infrastructure.
+                    With a decade of unparalleled experience in residential
+                    layouts, Nexus Elite Infra Developers is spearheaded by a
+                    management team dedicated to providing the best investment
+                    and housing solutions. We are driven by the pursuit of
+                    offering affordability, amenities, and excellent
+                    infrastructure to our clients. Your journey with Nexus Elite
+                    is not just about owning a property; it's about experiencing
+                    the pinnacle of quality, commitment and innovation in real
+                    estate development. Welcome to a future where your
+                    investment transcends time and trends.
                   </p>
                 </div>
                 <div class="w-footer-a">
@@ -35,7 +40,7 @@ export default function Footer(props) {
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-md-4 section-md-t3">
+            {/* <div class="col-sm-12 col-md-4 section-md-t3">
               <div class="widget-a">
                 <div class="w-header-a">
                   <h3 class="w-title-a text-brand"></h3>
@@ -46,8 +51,8 @@ export default function Footer(props) {
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-12 col-md-4 section-md-t3">
+            </div> */}
+            <div class="col-sm-12 col-md-5 section-md-t3">
               <div class="widget-a">
                 <div class="w-header-a">
                   <h3 class="w-title-a text-brand">Our sites</h3>
@@ -177,10 +182,13 @@ export default function Footer(props) {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="https://instagram.com/nexus_elite_pvtltd?igshid=MzRIODBiNWFIZA==" target="_blank">
+                    <a
+                      href="https://instagram.com/nexus_elite_pvtltd?igshid=MzRIODBiNWFIZA=="
+                      target="_blank"
+                    >
                       <i className="bi bi-instagram" aria-hidden="true"></i>
                     </a>
-                  </li> 
+                  </li>
                 </ul>
               </div>
               <div className="credits"></div>

@@ -34,7 +34,7 @@ import county_LayoutGallery5 from "../assets/img/county_LayoutGallery5.jpg";
 
 export default function About() {
   const navigate = useNavigate();
-  
+
   const propertyValues = [
     {
       name: "NexusElite County",
@@ -288,8 +288,12 @@ export default function About() {
                           </h3>
                         </div>
                         <p className="color-text-a">
-                          Our real estate solutions are designed to be eternal
-                          classics, never out of fashion even in the future.
+                          Welcome to Nexus Elite Infra Developers, where our
+                          vision is to create timeless real estate solutions
+                          that stand as eternal classics, defying the trends of
+                          time. We are committed to delivering projects that
+                          will never go out of fashion, ensuring your investment
+                          remains enduring.
                         </p>
                         {/* <p className="color-text-a">
                   Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
@@ -307,9 +311,10 @@ export default function About() {
                           </h3>
                         </div>
                         <p className="color-text-a">
-                          Our non-negotiable commitment to delivery ensures that
-                          each project is delivered on-time, and to your
-                          complete satisfaction.{" "}
+                          Our mission is non-negotiable—we guarantee on-time
+                          project delivery, prioritising your complete
+                          satisfaction. At Nexuselite, your trust is our driving
+                          force.
                         </p>
                         {/* <p className="color-text-a">
                   Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
@@ -323,15 +328,17 @@ export default function About() {
                       <div className="col-md-6">
                         <div className="title-box-d about">
                           <h3 className="title-d">
-                            Quality Policy
+                            Quality is at the Core of Our Endeavours
                             {/* <span className="color-d">porttitor</span> lectus
                     <br> nibh. */}
                           </h3>
                         </div>
                         <p className="color-text-a">
-                          Enriching your ownership experience with strong focus
-                          on quality at every stage of planning, development,
-                          and delivery.
+                          Experience an enriched ownership journey with our
+                          unwavering commitment to quality. From meticulous
+                          planning to thoughtful development and timely
+                          delivery, we embed quality into every stage of our
+                          projects.
                         </p>
                         {/* <p className="color-text-a">
                   Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
@@ -349,10 +356,11 @@ export default function About() {
                           </h3>
                         </div>
                         <p className="color-text-a">
-                          We expanded beyond developing residential and
-                          commercial properties to take the lead in hunting for
-                          the spaces for our customers and plotting it as per
-                          their requirements.{" "}
+                          Beyond residential and commercial properties, we take
+                          pride in leading the way in space acquisition and
+                          customization. Our plotting service allows us to
+                          tailor spaces according to your unique requirements,
+                          ensuring your vision becomes a reality.
                         </p>
                         {/* <p className="color-text-a">
                   Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
